@@ -36,7 +36,7 @@ if st.button("توليد الأمر الاحترافي ✨"):
                 # استدعاء نموذج Gemini
                 model = genai.GenerativeModel('gemini-1.5-pro')
                 response = model.generate_content(system_instruction)
-                
+
                 # عرض النتيجة
                 st.success("تم توليد الأمر بنجاح!")
                 st.text_area("الأمر (Prompt) جاهز للنسخ:", response.text, height=250)
