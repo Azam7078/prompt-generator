@@ -41,6 +41,6 @@ if st.button("توليد الأمر الاحترافي ✨"):
                 st.success("تم توليد الأمر بنجاح!")
                 st.text_area("الأمر (Prompt) جاهز للنسخ:", response.text, height=250)
             except Exception as e:
-                st.error(API_KEY = "AIzaSyE81EYZCH_j2wuLHfFI6alHKpV0acVCkE")
+              api_key = st.secrets["AIzaSyE81EYZCH_j2wuLHfFI6alHKpV0acVCkE"]
     else:
         st.warning("الرجاء كتابة الفكرة أولاً.")
